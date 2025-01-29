@@ -11,7 +11,7 @@ function App() {
     setStyleLink(style);
   }, [selectedStyle]);
   return (
-    <div className={style[styleLink]}>
+    <div className={`${style.base} ${style[styleLink]}`}>
       <Home
         selectedStyle={selectedStyle}
         styleLink={styleLink}
